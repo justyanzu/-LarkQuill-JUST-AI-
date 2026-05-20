@@ -1,0 +1,870 @@
+{
+  "agent:main:main": {
+    "sessionId": "b56cc2e2-e2b6-4b81-ba47-5d2da64495f7",
+    "updatedAt": 1779273541623,
+    "sessionStartedAt": 1779257398633,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>browser-automation</name>\n    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>\n    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>canvas</name>\n    <description>Present HTML on connected OpenClaw node canvases, navigate/eval/snapshot, and debug canvas host URLs.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/canvas/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>diagram-maker</name>\n    <description>Create SVG/HTML or Excalidraw diagrams for concepts, architecture, flows, and whiteboards.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/diagram-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Audit/harden OpenClaw hosts: SSH, firewall, updates, exposure, backups, disk encryption, gateway security.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>meme-maker</name>\n    <description>Search meme templates, suggest formats, and generate local or hosted image memes.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/meme-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-inspect-debugger</name>\n    <description>Debug Node.js with node inspect, --inspect, breakpoints, CDP, heap, and CPU profiles.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/node-inspect-debugger/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>notion</name>\n    <description>Notion CLI/API for pages, Markdown content, data sources, files, comments, search, Workers, and raw API calls.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/notion/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>python-debugpy</name>\n    <description>Debug Python with pdb, breakpoint(), post-mortem inspection, and debugpy remote attach.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/python-debugpy/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, audit, tidy, validate, or restructure AgentSkills and SKILL.md files.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>spike</name>\n    <description>Run throwaway prototypes to validate feasibility, compare approaches, and report a verdict.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/spike/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Control tmux sessions/panes for interactive CLIs: list, capture output, send keys, paste text, monitor prompts.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Current weather and forecasts with wttr.in via curl for locations, rain, temperature, travel planning.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "browser-automation"
+        },
+        {
+          "name": "canvas"
+        },
+        {
+          "name": "diagram-maker"
+        },
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "meme-maker",
+          "requiredEnv": []
+        },
+        {
+          "name": "node-connect"
+        },
+        {
+          "name": "node-inspect-debugger",
+          "requiredEnv": []
+        },
+        {
+          "name": "notion",
+          "primaryEnv": "NOTION_API_TOKEN",
+          "requiredEnv": []
+        },
+        {
+          "name": "python-debugpy",
+          "requiredEnv": []
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "spike"
+        },
+        {
+          "name": "taskflow"
+        },
+        {
+          "name": "taskflow-inbox-triage"
+        },
+        {
+          "name": "tmux",
+          "requiredEnv": []
+        },
+        {
+          "name": "weather",
+          "requiredEnv": []
+        }
+      ],
+      "version": 0
+    },
+    "lastInteractionAt": 1779273169220,
+    "sessionFile": "/root/.openclaw/agents/main/sessions/b56cc2e2-e2b6-4b81-ba47-5d2da64495f7.jsonl",
+    "contextTokens": 1000000,
+    "modelProvider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "agentHarnessId": "pi",
+    "abortedLastRun": false,
+    "systemPromptReport": {
+      "source": "run",
+      "generatedAt": 1779273170197,
+      "sessionId": "b56cc2e2-e2b6-4b81-ba47-5d2da64495f7",
+      "sessionKey": "agent:main:main",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "workspaceDir": "/root/.openclaw/workspace",
+      "bootstrapMaxChars": 12000,
+      "bootstrapTotalMaxChars": 60000,
+      "bootstrapTruncation": {
+        "warningMode": "always",
+        "warningShown": false,
+        "truncatedFiles": 0,
+        "nearLimitFiles": 0,
+        "totalNearLimit": false
+      },
+      "sandbox": {
+        "mode": "off",
+        "sandboxed": false
+      },
+      "systemPrompt": {
+        "chars": 29463,
+        "projectContextChars": 13609,
+        "nonProjectContextChars": 15854
+      },
+      "injectedWorkspaceFiles": [
+        {
+          "name": "AGENTS.md",
+          "path": "/root/.openclaw/workspace/AGENTS.md",
+          "missing": false,
+          "rawChars": 7774,
+          "injectedChars": 7774,
+          "truncated": false
+        },
+        {
+          "name": "SOUL.md",
+          "path": "/root/.openclaw/workspace/SOUL.md",
+          "missing": false,
+          "rawChars": 1797,
+          "injectedChars": 1797,
+          "truncated": false
+        },
+        {
+          "name": "TOOLS.md",
+          "path": "/root/.openclaw/workspace/TOOLS.md",
+          "missing": false,
+          "rawChars": 910,
+          "injectedChars": 910,
+          "truncated": false
+        },
+        {
+          "name": "IDENTITY.md",
+          "path": "/root/.openclaw/workspace/IDENTITY.md",
+          "missing": false,
+          "rawChars": 693,
+          "injectedChars": 693,
+          "truncated": false
+        },
+        {
+          "name": "USER.md",
+          "path": "/root/.openclaw/workspace/USER.md",
+          "missing": false,
+          "rawChars": 534,
+          "injectedChars": 534,
+          "truncated": false
+        },
+        {
+          "name": "HEARTBEAT.md",
+          "path": "/root/.openclaw/workspace/HEARTBEAT.md",
+          "missing": false,
+          "rawChars": 225,
+          "injectedChars": 225,
+          "truncated": false
+        },
+        {
+          "name": "BOOTSTRAP.md",
+          "path": "/root/.openclaw/workspace/BOOTSTRAP.md",
+          "missing": false,
+          "rawChars": 1510,
+          "injectedChars": 1510,
+          "truncated": false
+        }
+      ],
+      "skills": {
+        "promptChars": 4729,
+        "entries": [
+          {
+            "name": "browser-automation",
+            "blockChars": 324
+          },
+          {
+            "name": "canvas",
+            "blockChars": 279
+          },
+          {
+            "name": "diagram-maker",
+            "blockChars": 282
+          },
+          {
+            "name": "healthcheck",
+            "blockChars": 294
+          },
+          {
+            "name": "meme-maker",
+            "blockChars": 267
+          },
+          {
+            "name": "node-connect",
+            "blockChars": 297
+          },
+          {
+            "name": "node-inspect-debugger",
+            "blockChars": 293
+          },
+          {
+            "name": "notion",
+            "blockChars": 288
+          },
+          {
+            "name": "python-debugpy",
+            "blockChars": 281
+          },
+          {
+            "name": "skill-creator",
+            "blockChars": 275
+          },
+          {
+            "name": "spike",
+            "blockChars": 267
+          },
+          {
+            "name": "taskflow",
+            "blockChars": 297
+          },
+          {
+            "name": "taskflow-inbox-triage",
+            "blockChars": 307
+          },
+          {
+            "name": "tmux",
+            "blockChars": 285
+          },
+          {
+            "name": "weather",
+            "blockChars": 282
+          }
+        ]
+      },
+      "tools": {
+        "listChars": 0,
+        "schemaChars": 16807,
+        "entries": [
+          {
+            "name": "read",
+            "summaryChars": 298,
+            "schemaChars": 304,
+            "propertiesCount": 3
+          },
+          {
+            "name": "edit",
+            "summaryChars": 326,
+            "schemaChars": 834,
+            "propertiesCount": 2
+          },
+          {
+            "name": "write",
+            "summaryChars": 127,
+            "schemaChars": 225,
+            "propertiesCount": 2
+          },
+          {
+            "name": "exec",
+            "summaryChars": 539,
+            "schemaChars": 1187,
+            "propertiesCount": 12
+          },
+          {
+            "name": "process",
+            "summaryChars": 456,
+            "schemaChars": 1074,
+            "propertiesCount": 12
+          },
+          {
+            "name": "cron",
+            "summaryChars": 3610,
+            "schemaChars": 7191,
+            "propertiesCount": 14
+          },
+          {
+            "name": "update_plan",
+            "summaryChars": 163,
+            "schemaChars": 489,
+            "propertiesCount": 2
+          },
+          {
+            "name": "sessions_list",
+            "summaryChars": 135,
+            "schemaChars": 432,
+            "propertiesCount": 9
+          },
+          {
+            "name": "sessions_history",
+            "summaryChars": 117,
+            "schemaChars": 161,
+            "propertiesCount": 3
+          },
+          {
+            "name": "sessions_send",
+            "summaryChars": 224,
+            "schemaChars": 274,
+            "propertiesCount": 5
+          },
+          {
+            "name": "sessions_spawn",
+            "summaryChars": 332,
+            "schemaChars": 1240,
+            "propertiesCount": 17
+          },
+          {
+            "name": "sessions_yield",
+            "summaryChars": 79,
+            "schemaChars": 60,
+            "propertiesCount": 1
+          },
+          {
+            "name": "subagents",
+            "summaryChars": 129,
+            "schemaChars": 191,
+            "propertiesCount": 4
+          },
+          {
+            "name": "session_status",
+            "summaryChars": 278,
+            "schemaChars": 89,
+            "propertiesCount": 2
+          },
+          {
+            "name": "web_search",
+            "summaryChars": 65,
+            "schemaChars": 991,
+            "propertiesCount": 12
+          },
+          {
+            "name": "web_fetch",
+            "summaryChars": 93,
+            "schemaChars": 316,
+            "propertiesCount": 3
+          },
+          {
+            "name": "memory_search",
+            "summaryChars": 605,
+            "schemaChars": 237,
+            "propertiesCount": 4
+          },
+          {
+            "name": "memory_get",
+            "summaryChars": 239,
+            "schemaChars": 215,
+            "propertiesCount": 4
+          },
+          {
+            "name": "routed-image-gen__generate_image_iterative",
+            "summaryChars": 531,
+            "schemaChars": 714,
+            "propertiesCount": 8
+          },
+          {
+            "name": "routed-image-gen__preview_image_route",
+            "summaryChars": 117,
+            "schemaChars": 583,
+            "propertiesCount": 6
+          }
+        ]
+      },
+      "currentTurn": {
+        "promptChars": 32,
+        "runtimeContextChars": 0
+      }
+    },
+    "inputTokens": 4502,
+    "outputTokens": 3368,
+    "totalTokens": 119818,
+    "totalTokensFresh": true,
+    "cacheRead": 119296,
+    "cacheWrite": 0,
+    "estimatedCostUsd": 0.22252627999999997,
+    "systemSent": true,
+    "authProfileOverride": "deepseek:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 1,
+    "chatType": "direct",
+    "status": "done",
+    "startedAt": 1779273170439,
+    "compactionCount": 1,
+    "deliveryContext": {
+      "channel": "webchat"
+    },
+    "lastChannel": "webchat",
+    "channel": "webchat",
+    "origin": {
+      "provider": "webchat",
+      "surface": "webchat",
+      "chatType": "direct"
+    },
+    "endedAt": 1779273541549,
+    "runtimeMs": 371110
+  },
+  "agent:main:subagent:75a80136-0bd0-4807-916e-c343a53f121a": {
+    "spawnDepth": 1,
+    "subagentRole": "leaf",
+    "subagentControlScope": "none",
+    "inheritedToolAllow": [
+      "read",
+      "edit",
+      "write",
+      "exec",
+      "process",
+      "update_plan",
+      "sessions_list",
+      "sessions_history",
+      "sessions_send",
+      "sessions_spawn",
+      "sessions_yield",
+      "subagents",
+      "session_status",
+      "web_search",
+      "web_fetch",
+      "memory_search",
+      "memory_get"
+    ],
+    "model": "deepseek-v4-pro",
+    "modelOverride": "deepseek-v4-pro",
+    "modelOverrideSource": "auto",
+    "modelProvider": "deepseek",
+    "providerOverride": "deepseek",
+    "sessionId": "3d232fc9-bfe8-415a-b11e-6a7541eb41f4",
+    "updatedAt": 1779271459686,
+    "sessionStartedAt": 1779271439764,
+    "spawnedBy": "agent:main:main",
+    "spawnedWorkspaceDir": "/root/.openclaw/workspace",
+    "lastInteractionAt": 1779271459658,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>browser-automation</name>\n    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>\n    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>canvas</name>\n    <description>Present HTML on connected OpenClaw node canvases, navigate/eval/snapshot, and debug canvas host URLs.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/canvas/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>diagram-maker</name>\n    <description>Create SVG/HTML or Excalidraw diagrams for concepts, architecture, flows, and whiteboards.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/diagram-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Audit/harden OpenClaw hosts: SSH, firewall, updates, exposure, backups, disk encryption, gateway security.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-approval</name>\n    <description>飞书审批 API：审批实例、审批任务管理。</description>\n    <location>~/.agents/skills/lark-approval/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-attendance</name>\n    <description>飞书考勤打卡：查询自己的考勤打卡记录</description>\n    <location>~/.agents/skills/lark-attendance/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-base</name>\n    <description>当需要用 lark-cli 操作飞书多维表格（Base）时调用：搜索 Base、建表、字段管理、记录读写、记录分享链接、视图配置、历史查询，以及角色/表单/仪表盘管理/工作流；也适用于把旧的 +table / +field / +record 写法改成当前命令写法。涉及字段设计、公式字段、查找引用、跨表计算、行级派生指标、数据分析需求时也必须使用本 skill。</description>\n    <location>~/.agents/skills/lark-base/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-calendar</name>\n    <description>飞书日历（calendar）：提供日历与日程（会议）的全面管理能力。核心场景包括：查看/搜索日程、创建/更新日程、管理参会人、查询忙闲状态及推荐空闲时段、查询/搜索与预定会议室。注意：涉及【预约日程/会议】或【查询/预定会议室】时，必须先读取 references/lark-calendar-schedule-meeting.md 工作流！高频操作请优先使用 Shortcuts：+agenda（快速概览今日/近期行程）、+create（创建日程并按需邀请参会人及预定会议室）、+update（更新既有日程字段，或独立增删参会人/会议室）、+freebusy（查询用户主日历的忙闲信息和rsvp的状态）、+rsvp（回复日程邀请）</description>\n    <location>~/.agents/skills/lark-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-contact</name>\n    <description>飞书通讯录：查询组织架构、人员信息和搜索员工。获取当前用户或指定用户的详细信息、通过关键词搜索员工（姓名/邮箱/手机号）。当用户需要查看个人信息、查找同事 open_id 或联系方式、按姓名搜索员工、查询部门结构时使用。</description>\n    <location>~/.agents/skills/lark-contact/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-doc</name>\n    <description>飞书云文档 / Docx / 知识库 Wiki 文档（v2）：创建、打开、读取、获取、查看、总结、整理、改写、翻译、审阅和编辑飞书文档内容。当用户给出飞书文档 URL/token，或说查看/读取/打开某个文档、提取文档内容、总结文档、生成/创建文档、追加/替换/删除/移动内容、调整排版、插入或下载文档图片/附件/素材/画板缩略图时使用。文档内容中出现嵌入电子表格、多维表格、需要将重要信息可视化为画板（含 SVG 画板）、引用或同步块时，也先用本 skill 读取和提取 token，再切到对应 skill 下钻。使用本 skill 时，docs +create、docs +fetch、docs +update 必须携带 --api-version v2；默认使用 DocxXML，也支持 Markdown。</description>\n    <location>~/.agents/skills/lark-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-drive</name>\n    <description>飞书云空间：管理云空间中的文件和文件夹。上传和下载文件、创建文件夹、复制/移动/删除文件、查看文件元数据、管理文档评论、管理文档权限、订阅用户评论变更事件、修改文件标题（docx、sheet、bitable、file、folder、wiki）；也负责把本地 Word/Markdown/Excel/CSV 以及 Base 快照（.base）导入为飞书在线云文档（docx、sheet、bitable）。当用户需要上传或下载文件、整理云空间目录、查看文件详情、管理评论、管理文档权限、修改文件标题、订阅用户评论变更事件，或要把本地文件导入成新版文档、电子表格、多维表格/Base 时使用。</description>\n    <location>~/.agents/skills/lark-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-event</name>\n    <description>Lark/Feishu real-time event listening / subscribing / consuming: stream events as NDJSON via `lark-cli event consume &lt;EventKey&gt;` (covers IM message receive, reactions, chat member changes, etc.). Use for Lark bots, real-time message processing, long-running subscribers, streaming webhook/push handlers. Supports `--max-events` / `--timeout` bounded runs and a stderr ready-marker contract — designed for AI agents running as subprocesses.</description>\n    <location>~/.agents/skills/lark-event/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-im</name>\n    <description>飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件（支持大文件分片下载）、管理表情回复。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员、搜索群、创建群聊或话题群、管理标记数据时使用。</description>\n    <location>~/.agents/skills/lark-im/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-mail</name>\n    <description>飞书邮箱 — draft, compose, send, reply, forward, read, and search emails; manage drafts, folders, labels, contacts, attachments, and mail rules. Use when user mentions 起草邮件, 写一封邮件, 拟邮件, 草稿, 发通知邮件, 发送邮件, 发邮件, 回复邮件, 转发邮件, 查看邮件, 看邮件, 读邮件, 搜索邮件, 查邮件, 收件箱, 邮件会话, 编辑草稿, 管理草稿, 下载附件, 邮件文件夹, 邮件标签, 邮件联系人, 监听新邮件, 收信规则, 邮件规则, draft, compose, send email, reply, forward, inbox, mail thread, mail rules.</description>\n    <location>~/.agents/skills/lark-mail/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-minutes</name>\n    <description>飞书妙记：妙记相关基本功能。1.查询妙记列表（按关键词/所有者/参与者/时间范围）；2.获取妙记基础信息（标题、封面、时长 等）；3.下载妙记音视频文件；4.获取妙记相关 AI 产物（总结、待办、章节）；5.上传音视频生成妙记，也支持将本地音视频文件转成纪要、逐字稿、文字稿、撰写文字等产物。遇到这类请求时，应优先使用本 skill，而不是尝试 `ffmpeg`、`whisper` 等本地转写命令。飞书妙记 URL 格式: http(s)://&lt;host&gt;/minutes/&lt;minute-token&gt;</description>\n    <location>~/.agents/skills/lark-minutes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-okr</name>\n    <description>飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标（Objective）、关键结果（Key Result）、对齐关系、量化指标和进展记录。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。</description>\n    <location>~/.agents/skills/lark-okr/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-openapi-explorer</name>\n    <description>飞书/Lark 原生 OpenAPI 探索：从官方文档库中挖掘未经 CLI 封装的原生 OpenAPI 接口。当用户的需求无法被现有 lark-* skill 或 lark-cli 已注册命令满足，需要查找并调用原生飞书 OpenAPI 时使用。</description>\n    <location>~/.agents/skills/lark-openapi-explorer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-shared</name>\n    <description>Use when first setting up lark-cli, running auth login, switching user/bot identity (--as), handling permission denied or scope errors, needing to update lark-cli, or seeing _notice in JSON output.</description>\n    <location>~/.agents/skills/lark-shared/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-sheets</name>\n    <description>飞书电子表格：创建和操作电子表格。支持创建表格、创建/复制/删除/更新工作表、读写单元格、追加行数据、查找内容、导出文件。当用户需要创建电子表格、管理工作表、批量读写数据、在已知表格中查找内容、导出或下载表格时使用。若用户是想按名称或关键词搜索云空间里的表格文件，请改用 lark-doc 的 docs +search 先定位资源。</description>\n    <location>~/.agents/skills/lark-sheets/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-skill-maker</name>\n    <description>创建 lark-cli 的自定义 Skill。当用户需要把飞书 API 操作封装成可复用的 Skill（包装原子 API 或编排多步流程）时使用。</description>\n    <location>~/.agents/skills/lark-skill-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-slides</name>\n    <description>飞书幻灯片：创建和编辑幻灯片，接口通过 XML 协议通信。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。</description>\n    <location>~/.agents/skills/lark-slides/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-task</name>\n    <description>飞书任务：管理任务、清单和任务智能体。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员、上传任务附件、注册或注销任务智能体、更新任务智能体的主页数据、写入智能体任务记录。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务、为任务上传附件文件、注册注销任务智能体、更新智能体主页数据、写入任务记录时使用。</description>\n    <location>~/.agents/skills/lark-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-vc</name>\n    <description>飞书视频会议：搜索历史会议、查询会议纪要产物（总结、待办、章节、逐字稿）、查询会议参会人快照。1. 查询已经结束的会议数量或详情时使用本技能（如历史日期｜昨天｜上周｜今天已经开过的会议等场景），查询未开始的会议日程使用 lark-calendar 技能。2. 支持通过关键词、时间范围、组织者、参与者、会议室等筛选条件搜索会议。3. 获取或整理会议纪要、逐字稿、录制产物时使用本技能。4. 查询“谁参加过某会议”“参会人列表”等参会人快照信息用 vc meeting get --with-participants（任意时点可查，含已结束会议）。注意：**Agent 真实入会/离会、感知正在进行中会议的实时事件**请使用 lark-vc-agent 技能，本技能不覆盖写操作和会中事件流。</description>\n    <location>~/.agents/skills/lark-vc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-vc-agent</name>\n    <description>飞书视频会议：让机器人代当前用户加入/离开正在进行的会议，并读取会议期间的实时事件（参会人加入与离开、发言、聊天、屏幕共享等）。1. 用户提供 9 位会议号、要求代为入会或离会时使用 +meeting-join / +meeting-leave——会真实产生入会/离会记录。2. 会议进行中用户想知道“谁加入了”“谁离开了”“谁在发言”“有人共享屏幕吗”等会中动态时，机器人入会后用 +meeting-events 读取事件时间线。3. 典型场景：参会机器人、会中助手、代为旁听、代为参会。前提：机器人只能读到它自己参会过且仍在进行中的会议的事件；查询已结束会议的参会名单、纪要或逐字稿请使用 lark-vc 技能。</description>\n    <location>~/.agents/skills/lark-vc-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-whiteboard</name>\n    <description>飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用 DSL（转成 OpenAPI 格式）、PlantUML/Mermaid 格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板，或是需要可视化表达架构、流程、组织关系、时间线、因果、对比等结构化信息时使用此 skill，无论是否提及&quot;画板&quot;。 ⚠️ 原 `lark-whiteboard-cli` skill 已合并至本 skill，若 skill 列表中同时存在 `lark-whiteboard-cli`，请忽略它，统一使用本 skill（`lark-whiteboard`），并提示用户运行 `npx skills remove lark-whiteboard-cli -g` 删除旧 skill。</description>\n    <location>~/.agents/skills/lark-whiteboard/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-wiki</name>\n    <description>飞书知识库：管理知识空间、空间成员和文档节点。创建和查询知识空间、查看和管理空间成员、管理节点层级结构、在知识库中组织文档和快捷方式。当用户需要在知识库中查找或创建文档、浏览知识空间结构、查看或管理空间成员、移动或复制节点时使用。</description>\n    <location>~/.agents/skills/lark-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-meeting-summary</name>\n    <description>会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告。当用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时使用。</description>\n    <location>~/.agents/skills/lark-workflow-meeting-summary/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-standup-report</name>\n    <description>日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。</description>\n    <location>~/.agents/skills/lark-workflow-standup-report/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>meme-maker</name>\n    <description>Search meme templates, suggest formats, and generate local or hosted image memes.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/meme-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-inspect-debugger</name>\n    <description>Debug Node.js with node inspect, --inspect, breakpoints, CDP, heap, and CPU profiles.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/node-inspect-debugger/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>notion</name>\n    <description>Notion CLI/API for pages, Markdown content, data sources, files, comments, search, Workers, and raw API calls.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/notion/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>python-debugpy</name>\n    <description>Debug Python with pdb, breakpoint(), post-mortem inspection, and debugpy remote attach.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/python-debugpy/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, audit, tidy, validate, or restructure AgentSkills and SKILL.md files.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>spike</name>\n    <description>Run throwaway prototypes to validate feasibility, compare approaches, and report a verdict.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/spike/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Control tmux sessions/panes for interactive CLIs: list, capture output, send keys, paste text, monitor prompts.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Current weather and forecasts with wttr.in via curl for locations, rain, temperature, travel planning.</description>\n    <location>~/.nvm/versions/node/v22.22.3/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "browser-automation"
+        },
+        {
+          "name": "canvas"
+        },
+        {
+          "name": "diagram-maker"
+        },
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "lark-approval"
+        },
+        {
+          "name": "lark-attendance"
+        },
+        {
+          "name": "lark-base"
+        },
+        {
+          "name": "lark-calendar"
+        },
+        {
+          "name": "lark-contact"
+        },
+        {
+          "name": "lark-doc"
+        },
+        {
+          "name": "lark-drive"
+        },
+        {
+          "name": "lark-event"
+        },
+        {
+          "name": "lark-im"
+        },
+        {
+          "name": "lark-mail"
+        },
+        {
+          "name": "lark-minutes"
+        },
+        {
+          "name": "lark-okr"
+        },
+        {
+          "name": "lark-openapi-explorer"
+        },
+        {
+          "name": "lark-shared"
+        },
+        {
+          "name": "lark-sheets"
+        },
+        {
+          "name": "lark-skill-maker"
+        },
+        {
+          "name": "lark-slides"
+        },
+        {
+          "name": "lark-task"
+        },
+        {
+          "name": "lark-vc"
+        },
+        {
+          "name": "lark-vc-agent"
+        },
+        {
+          "name": "lark-whiteboard"
+        },
+        {
+          "name": "lark-wiki"
+        },
+        {
+          "name": "lark-workflow-meeting-summary"
+        },
+        {
+          "name": "lark-workflow-standup-report"
+        },
+        {
+          "name": "meme-maker",
+          "requiredEnv": []
+        },
+        {
+          "name": "node-connect"
+        },
+        {
+          "name": "node-inspect-debugger",
+          "requiredEnv": []
+        },
+        {
+          "name": "notion",
+          "primaryEnv": "NOTION_API_TOKEN",
+          "requiredEnv": []
+        },
+        {
+          "name": "python-debugpy",
+          "requiredEnv": []
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "spike"
+        },
+        {
+          "name": "taskflow"
+        },
+        {
+          "name": "taskflow-inbox-triage"
+        },
+        {
+          "name": "tmux",
+          "requiredEnv": []
+        },
+        {
+          "name": "weather",
+          "requiredEnv": []
+        }
+      ],
+      "version": 0
+    },
+    "deliveryContext": {
+      "channel": "webchat"
+    },
+    "lastChannel": "webchat",
+    "channel": "webchat",
+    "sessionFile": "/root/.openclaw/agents/main/sessions/3d232fc9-bfe8-415a-b11e-6a7541eb41f4.jsonl",
+    "status": "done",
+    "startedAt": 1779271439959,
+    "endedAt": 1779271459242,
+    "runtimeMs": 17321,
+    "abortedLastRun": false,
+    "contextTokens": 1000000,
+    "agentHarnessId": "pi",
+    "systemPromptReport": {
+      "source": "run",
+      "generatedAt": 1779271441754,
+      "sessionId": "3d232fc9-bfe8-415a-b11e-6a7541eb41f4",
+      "sessionKey": "agent:main:subagent:75a80136-0bd0-4807-916e-c343a53f121a",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "workspaceDir": "/root/.openclaw/workspace",
+      "bootstrapMaxChars": 12000,
+      "bootstrapTotalMaxChars": 60000,
+      "bootstrapTruncation": {
+        "warningMode": "always",
+        "warningShown": false,
+        "truncatedFiles": 0,
+        "nearLimitFiles": 0,
+        "totalNearLimit": false
+      },
+      "sandbox": {
+        "mode": "off",
+        "sandboxed": false
+      },
+      "systemPrompt": {
+        "chars": 31161,
+        "projectContextChars": 14595,
+        "nonProjectContextChars": 16566
+      },
+      "injectedWorkspaceFiles": [
+        {
+          "name": "AGENTS.md",
+          "path": "/root/.openclaw/workspace/AGENTS.md",
+          "missing": false,
+          "rawChars": 7774,
+          "injectedChars": 7774,
+          "truncated": false
+        },
+        {
+          "name": "SOUL.md",
+          "path": "/root/.openclaw/workspace/SOUL.md",
+          "missing": false,
+          "rawChars": 1797,
+          "injectedChars": 1797,
+          "truncated": false
+        },
+        {
+          "name": "TOOLS.md",
+          "path": "/root/.openclaw/workspace/TOOLS.md",
+          "missing": false,
+          "rawChars": 910,
+          "injectedChars": 910,
+          "truncated": false
+        },
+        {
+          "name": "IDENTITY.md",
+          "path": "/root/.openclaw/workspace/IDENTITY.md",
+          "missing": false,
+          "rawChars": 693,
+          "injectedChars": 693,
+          "truncated": false
+        },
+        {
+          "name": "USER.md",
+          "path": "/root/.openclaw/workspace/USER.md",
+          "missing": false,
+          "rawChars": 534,
+          "injectedChars": 534,
+          "truncated": false
+        }
+      ],
+      "skills": {
+        "promptChars": 13031,
+        "entries": [
+          {
+            "name": "browser-automation",
+            "blockChars": 324
+          },
+          {
+            "name": "canvas",
+            "blockChars": 279
+          },
+          {
+            "name": "diagram-maker",
+            "blockChars": 282
+          },
+          {
+            "name": "healthcheck",
+            "blockChars": 294
+          },
+          {
+            "name": "lark-approval",
+            "blockChars": 167
+          },
+          {
+            "name": "lark-attendance",
+            "blockChars": 168
+          },
+          {
+            "name": "lark-base",
+            "blockChars": 320
+          },
+          {
+            "name": "lark-calendar",
+            "blockChars": 462
+          },
+          {
+            "name": "lark-contact",
+            "blockChars": 254
+          },
+          {
+            "name": "lark-doc",
+            "blockChars": 492
+          },
+          {
+            "name": "lark-drive",
+            "blockChars": 433
+          },
+          {
+            "name": "lark-event",
+            "blockChars": 585
+          },
+          {
+            "name": "lark-im",
+            "blockChars": 258
+          },
+          {
+            "name": "lark-mail",
+            "blockChars": 524
+          },
+          {
+            "name": "lark-minutes",
+            "blockChars": 408
+          },
+          {
+            "name": "lark-okr",
+            "blockChars": 247
+          },
+          {
+            "name": "lark-openapi-explorer",
+            "blockChars": 285
+          },
+          {
+            "name": "lark-shared",
+            "blockChars": 339
+          },
+          {
+            "name": "lark-sheets",
+            "blockChars": 308
+          },
+          {
+            "name": "lark-skill-maker",
+            "blockChars": 225
+          },
+          {
+            "name": "lark-slides",
+            "blockChars": 236
+          },
+          {
+            "name": "lark-task",
+            "blockChars": 316
+          },
+          {
+            "name": "lark-vc",
+            "blockChars": 479
+          },
+          {
+            "name": "lark-vc-agent",
+            "blockChars": 454
+          },
+          {
+            "name": "lark-whiteboard",
+            "blockChars": 512
+          },
+          {
+            "name": "lark-wiki",
+            "blockChars": 253
+          },
+          {
+            "name": "lark-workflow-meeting-summary",
+            "blockChars": 246
+          },
+          {
+            "name": "lark-workflow-standup-report",
+            "blockChars": 259
+          },
+          {
+            "name": "meme-maker",
+            "blockChars": 267
+          },
+          {
+            "name": "node-connect",
+            "blockChars": 297
+          },
+          {
+            "name": "node-inspect-debugger",
+            "blockChars": 293
+          },
+          {
+            "name": "notion",
+            "blockChars": 288
+          },
+          {
+            "name": "python-debugpy",
+            "blockChars": 281
+          },
+          {
+            "name": "skill-creator",
+            "blockChars": 275
+          },
+          {
+            "name": "spike",
+            "blockChars": 267
+          },
+          {
+            "name": "taskflow",
+            "blockChars": 297
+          },
+          {
+            "name": "taskflow-inbox-triage",
+            "blockChars": 307
+          },
+          {
+            "name": "tmux",
+            "blockChars": 285
+          },
+          {
+            "name": "weather",
+            "blockChars": 282
+          }
+        ]
+      },
+      "tools": {
+        "listChars": 0,
+        "schemaChars": 5932,
+        "entries": [
+          {
+            "name": "read",
+            "summaryChars": 298,
+            "schemaChars": 304,
+            "propertiesCount": 3
+          },
+          {
+            "name": "edit",
+            "summaryChars": 326,
+            "schemaChars": 834,
+            "propertiesCount": 2
+          },
+          {
+            "name": "write",
+            "summaryChars": 127,
+            "schemaChars": 225,
+            "propertiesCount": 2
+          },
+          {
+            "name": "exec",
+            "summaryChars": 446,
+            "schemaChars": 1187,
+            "propertiesCount": 12
+          },
+          {
+            "name": "process",
+            "summaryChars": 362,
+            "schemaChars": 1074,
+            "propertiesCount": 12
+          },
+          {
+            "name": "update_plan",
+            "summaryChars": 163,
+            "schemaChars": 489,
+            "propertiesCount": 2
+          },
+          {
+            "name": "sessions_yield",
+            "summaryChars": 79,
+            "schemaChars": 60,
+            "propertiesCount": 1
+          },
+          {
+            "name": "web_search",
+            "summaryChars": 65,
+            "schemaChars": 991,
+            "propertiesCount": 12
+          },
+          {
+            "name": "web_fetch",
+            "summaryChars": 93,
+            "schemaChars": 316,
+            "propertiesCount": 3
+          },
+          {
+            "name": "memory_search",
+            "summaryChars": 605,
+            "schemaChars": 237,
+            "propertiesCount": 4
+          },
+          {
+            "name": "memory_get",
+            "summaryChars": 239,
+            "schemaChars": 215,
+            "propertiesCount": 4
+          }
+        ]
+      },
+      "currentTurn": {
+        "promptChars": 589,
+        "runtimeContextChars": 0
+      }
+    },
+    "inputTokens": 12164,
+    "outputTokens": 452,
+    "totalTokens": 12164,
+    "totalTokensFresh": true,
+    "cacheRead": 0,
+    "cacheWrite": 0,
+    "estimatedCostUsd": 0.02273832
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "lastGood": {
+    "deepseek": "deepseek:default"
+  },
+  "usageStats": {
+    "deepseek:default": {
+      "lastUsed": 1779273541586,
+      "errorCount": 0
+    }
+  }
+}

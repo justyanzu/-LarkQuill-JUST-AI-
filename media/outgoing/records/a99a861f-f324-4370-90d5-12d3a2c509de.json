@@ -1,0 +1,17 @@
+{
+  "attachmentId": "a99a861f-f324-4370-90d5-12d3a2c509de",
+  "sessionKey": "agent:main:main",
+  "messageId": "2975541b-e30d-4cdb-bcc6-58665e9b0507",
+  "createdAt": "2026-05-20T10:29:57.798Z",
+  "retentionClass": "history",
+  "alt": "openai-d41de763ac6a49eebbc793abd57618da---4c5d8c62-501d-4bf3-8f42-ba34ffa84247.jpg",
+  "original": {
+    "path": "/root/.openclaw/media/outgoing/originals/a84106f6-e7b3-4a64-9fed-4426e9c1f159.jpg",
+    "contentType": "image/jpeg",
+    "width": 1086,
+    "height": 1448,
+    "sizeBytes": 244864,
+    "filename": "a84106f6-e7b3-4a64-9fed-4426e9c1f159.jpg"
+  },
+  "updatedAt": "2026-05-20T10:29:57.844Z"
+}
