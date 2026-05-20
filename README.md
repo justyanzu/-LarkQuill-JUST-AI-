@@ -1,6 +1,6 @@
 项目：雀翎 (LarkQuill) — 飞书多维表格 AI 电商自动化助手                                                                                                            
                                                                                                                                                                      
-  技术栈：Python · MCP 协议 · GPT-Image-2 · lark-cli · Grsai 中转 · OpenClaw AI Agent                                                                                
+  技术栈：Python · MCP 协议 · GPT-Image-2 · lark-cli  · OpenClaw AI Agent                                                                                
                                                                                                                                                                      
   功能：                                                                                                                                                             
   • 自动读取飞书多维表格中的商品信息（名称/价格）                                                                                                                    
