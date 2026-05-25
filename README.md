@@ -14,3 +14,17 @@
 
   生成图示例：
   <img width="1086" height="1448" alt="openai-d41de763ac6a49eebbc793abd57618da" src="https://github.com/user-attachments/assets/f2236eec-857f-4ee5-84d9-70f31d540b11" />
+
+从高分和低分两个极值进行思考总结
+  <img width="797" height="228" alt="image" src="https://github.com/user-attachments/assets/9dc66d7d-dc23-4f0f-8604-931a97f3ba08" />
+
+  <img width="666" height="595" alt="image" src="https://github.com/user-attachments/assets/3c0d8ff2-1bba-4f30-8d5f-602bfe76756e" />
+
+  <img width="705" height="351" alt="image" src="https://github.com/user-attachments/assets/c81830ec-54f4-4f0e-b2a7-3968b57189e9" />
+
+落盘总结成果，自我学习闭环
+  <img width="1442" height="207" alt="image" src="https://github.com/user-attachments/assets/5b60c076-ad1b-4d98-952f-1cf5c154c040" />
+
+
+
+
